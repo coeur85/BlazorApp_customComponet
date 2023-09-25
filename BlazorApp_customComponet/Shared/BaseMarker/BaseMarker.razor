@@ -1,0 +1,47 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="input-group">
+
+                    <div class="input-group-text">
+                        <input type="radio" name="mrkimg" disabled="@rdio_officePicDisable" @onchange="OfficeImageChange" />
+                    </div>
+                    <div class="input-group-prepend">
+                        <label class="input-group-text form-control">Office 365 picture</label>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <input type="radio" name="mrkimg" @onchange="StaticImageChange" />
+                    </div>
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Static colors icons</label>
+                    </div>
+
+                    <select class="custom-select form-control" disabled="@drp_staticImagesDisable">
+                            <option value="1">Red</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Orange</option>
+                            <option value="3">Pink</option>
+                        </select>
+
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="input-group">
+                    <div class="input-group-text">
+                        <input type="radio" name="mrkimg" @onchange="CustomeImageChange" />
+                    </div>
+                    <input type="file" class="form-control" disabled="@fileuploadDisable" />
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-6" style="height: 100px;">
+        <img src="img/marker-red.png" alt="" style="width:32px; height:32px" class="align-middle" />
+    </div>
+</div>
